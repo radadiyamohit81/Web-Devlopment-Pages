@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Shadow</title>
+	<style type="text/css">
+		*{
+	    	margin: 0px;
+	    	padding: 0px;
+	    }
+		header h2{
+			text-align: center;
+		}
+		header{
+			background-color: lightgrey;
+			padding: 20px;
+		}
+		.container div{
+			padding: 20px;
+			margin: 20px;
+		}
+		.container{
+			margin-left: 25%;
+			margin-top: 20px;
+			width: 700px;
+			height: 500px;
+			box-shadow: 2px 2px 5px black;
+		}
+		.c1{
+			text-shadow: 1px 1px 5px grey;
+		}
+		.c2{
+			text-shadow: 2px 2px grey;
+		}
+		.c3{
+			text-shadow: initial;
+		}
+		.c4{
+			text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);;
+		}
+		.c5{
+			text-shadow: 2px 2px 5px blue;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h2>Creating text shadow effect.</h2>
+	</header>
+	<div class="container">
+		<div class="c1"><p>Testing Text Shadow.</p></div>
+		<div class="c2"><p>Testing Text Shadow.</p></div>
+		<div class="c3"><p>Testing Text Shadow.</p></div>
+		<div class="c4"><p>Testing Text Shadow.</p></div>
+		<div class="c5"><p>Testing Text Shadow.</p></div>
+	</div>
+</body>
+</html>
