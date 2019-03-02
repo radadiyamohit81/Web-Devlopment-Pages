@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transformation CSS</title>
+	<style type="text/css">
+		*{
+	    	margin: 0px;
+	    	padding: 0px;
+	    }
+		header h2{
+			text-align: center;
+		}
+		header{
+			background-color: lightgrey;
+			padding: 20px;
+		}
+		.container{
+			height: 100%;
+			width: 100%;
+			margin-top: 10px;
+		}
+		.con1{
+			margin-left: 50px;
+			margin-top: 10px;
+			box-shadow: 2px 2px 5px grey;
+			background-color: grey;
+			height: 200px;
+			width: 200px;
+			transform: rotate(68deg);
+			float: left;
+		}
+		.con2{
+			margin-left: 50px;
+			box-shadow: 2px 2px 5px grey;
+			background-color: grey;
+			height: 200px;
+			width: 200px;
+			float: left;
+			transform: skewX(20deg);
+		}
+		.con3{
+			margin-left: 50px;
+			box-shadow: 2px 2px 5px grey;
+			background-color: grey;
+			height: 200px;
+			width: 200px;
+			float: left;
+			transform: skewY(20deg);
+		}
+		.con4{
+			margin-left: 60px;
+			box-shadow: 2px 2px 5px grey;
+			background-color: grey;
+			height: 200px;
+			width: 200px;
+			float: left;
+			transform: scaleY(1.5);
+		}
+		.con5{
+			margin-left: 50px;
+			box-shadow: 2px 2px 5px grey;
+			background-color: grey;
+			height: 200px;
+			width: 200px;
+			float: left;
+			transform: scaleX(0.5);
+		}
+		.con6{
+			margin-left: 0px;
+			margin-top: 50px;
+			box-shadow: 2px 2px 5px grey;
+			background-color: grey;
+			height: 200px;
+			width: 200px;
+			float: left;
+			transform: matrix(0.866,0.5,-0.8,0.856,0,0);
+		}
+		.con7{
+			margin-left: 50px;
+			box-shadow: 2px 2px 5px grey;
+			background-color: grey;
+			height: 200px;
+			width: 200px;
+			float: left;
+			transform: rotateX(10deg);
+		}
+		.con8{
+			margin-left: 50px;
+			margin-top: 100px;
+			box-shadow: 2px 2px 5px grey;
+			background-color: grey;
+			height: 200px;
+			width: 200px;
+			float: left;
+			transform: skew(10deg,15deg);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h2>Transformation CSS</h2>
+	</header>
+	<div class="container">
+		<div class="con1">Rotate(68deg)</div>
+		<div class="con2">skeyx(20deg)</div>
+		<div class="con3">skewy(20deg)</div>
+		<div class="con4">scaleY(1.5)</div>
+		<div class="con5">scaleX(0.5)</div>
+		<div class="con6">matrix(0.866,0.5,-0.8,0.856,0,0)</div>
+		<div class="con7">rotateX(10deg)</div>
+		<div class="con8">skew(10deg,15deg)</div>
+	</div>
+</body>
+</html>
