@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geolocation</title>
+	
+</head>
+<body>
+	<input type="button" name="click here" value="Button" onClick="process()">
+	<p id="pri"></p>
+	<p id="pri"></p>
+
+	<script type="text/javascript">
+		var x=document.getElementById("pri");
+		function process()
+		{
+                  if(navigator.geolocation)
+                  {
+           	     navigator.geolocation.watchPosition(showPosition);
+                  }
+                  else
+                  {
+           	     x.innerHTML="your browser is not supported Geolocation";
+                  }
+		}
+		function showPosition(position)
+		{
+			x.innerHTML="Lattitude\t"+ position.coords.latitude +"<br>longitude\t"+position.coords.longitude;
+		}
+	</script>
+</body>
+</html>
