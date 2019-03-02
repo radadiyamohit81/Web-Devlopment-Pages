@@ -1,0 +1,88 @@
+<html>
+<html>
+<head>
+	<title>Validation form</title>
+	<meta lang="regexp">
+	<style type="text/css">
+		form{
+			margin: 170px 450px 170px 450px;
+			box-shadow: 2px 2px 5px red;
+			padding:50px;
+			background-color: lightgrey;
+		}
+		.form-group{
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form method="POST" name="form1">
+		<p id="pri"></p>
+		<p id="pr"></p>
+		<p id="p"></p>
+		<div class="form-group">
+			<label>Name:</label><div></div>
+			<input type="text" name="name"><br>
+		</div>
+		<div class="form-group">
+			<label>Contact:</label><div></div>
+			<input type="Contact" name="phone"><br>
+		</div>
+		<div class="form-group">
+			<label>Email:</label><div></div>
+			<input type="text" name="email"><br>
+		</div>
+
+		<input type="button" name="submit" value="submit" onfocus="process()">
+	</form>
+	<script type="text/javascript">
+		var print=document.getElementById("pri");
+		function process()
+		{
+			
+			var str=document.forms['form1']['name'].value;
+			var pho=document.forms['form1']['phone'].value;
+			var email=document.forms['form1']['email'].value;
+
+			var re=/^[a-zA-Z\s]+$/;
+			var reg=/^[0-9]{10}$/;
+			var reg1= /^\w+([\.]\w+)*@\w+([\.]\w+)*\.\w+([\.]\w+)*$/;
+			
+			if (str.match(re)) {
+				if(pho.match(reg)){
+					if (email.match(reg1)) {
+						emailValidate();
+					}
+					else
+					{
+						print.innerHTML="Email is not valid";
+					}
+				}
+				else
+				{
+					phoValidate();
+				}
+			}
+			else
+			{
+				emailValidate();
+			}
+
+
+
+		}
+		function nameValidate()
+		{
+			print.innerHTML="name is not valid";
+		}
+		function phoValidate()
+		{
+			print.innerHTML="phone is not valid";
+		}
+		function emailValidate()
+		{
+			print.innerHTML="all value valid";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio and video</title>
+	<style type="text/css">
+	    *{
+	    	padding: 0px;
+	    	margin:0px;
+	    }
+	    header{
+	    	background-color: lightgrey;
+	    	box-shadow: 2px 2px 5px black;
+	    }
+		h1{
+			text-align: center;
+			padding:20px;
+		}
+		.fir{
+			box-shadow: 2px 2px 5px black;
+			display: inline-block;
+			margin-left: 50px;
+			margin-top: 50px;
+			height: 400px;
+			width: 600px;
+			float: left;
+			background-color: #E6E6FA;
+		}
+		.sec{
+			box-shadow: 2px 2px 5px black;
+			display: inline-block;
+			margin-left: 50px;
+			margin-top: 50px;
+			height: 480px;
+			width: 600px;
+			float: left;
+			background-color: #E6E6FA;
+		}
+		section h2{
+			margin-top: 5px;
+			text-align: center;
+			text-shadow: 2px 2px 5px grey;
+		}
+		section audio{
+			margin-top: 100px;
+			margin-left: 150px;
+			box-shadow: 2px 2px 5px grey;
+			border-radius: 25px;
+		}
+		section video{
+			margin-left: 80px;
+			border-radius: 5px;
+			margin-top: 0px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Multimedia</h1>
+	</header>
+	<section class="fir">
+		<h2>This is Audio Testing mode.</h2>
+		<audio controls>
+			<source src="Pa Pa Pagli.mp3" type="audio/mpeg">
+		</audio>
+	</section>
+	<section class="sec">
+		<h2>This is Video Testing mode.</h2>
+		<video controls height="400px" width="450px">
+			<source src="CDSL_NAD.mp4" type="video/mp4">
+		</video>
+	</section>
+</body>
+</html>
