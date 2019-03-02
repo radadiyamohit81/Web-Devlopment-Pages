@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition_Effect</title>
+	<style type="text/css">
+	    *{
+	    	margin: 0px;
+	    	padding: 0px;
+	    }
+		header div h2{
+			text-align: center;
+		}
+		header{
+			background-color: lightgrey;
+			padding: 20px;
+		}
+		.container{
+			box-shadow: 2px 2px 5px grey;
+			float: left;
+			height: 500px;
+			padding-right: 200px;
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+		.container1{
+			box-shadow: 2px 2px 5px grey;
+			float: left;
+			height: 500px;
+			padding-right: 180px;
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+		.tran1{
+			margin: 5px;
+			background-color: red;
+			height: 50px;
+			width: 50px;
+			box-shadow: 2px 2px 5px grey;
+			transition: width 3s;
+		}
+		.tran1:hover{
+			width: 200px;
+		}
+		.tran2{
+			margin: 5px;
+			background-color: red;
+			height: 50px;
+			width: 50px;
+			box-shadow: 2px 2px 5px grey;
+			transition: width 3s,height 5s;
+		}
+		.tran2:hover{
+			width: 200px;
+			height: 200px;
+		}
+		.tran3{
+			margin: 5px;
+			background-color: red;
+			height: 50px;
+			width: 50px;
+			box-shadow: 2px 2px 5px grey;
+			transition: width 2s;
+		}
+		.tran3:hover{
+			width: 200px;
+			transition-timing-function: linear;
+		}
+		.tran4{
+			margin: 5px;
+			background-color: red;
+			height: 50px;
+			width: 50px;
+			box-shadow: 2px 2px 5px grey;
+			transition: width 2s;
+		}
+		.tran4:hover{
+			width: 200px;
+			transition-timing-function: ease;
+		}
+		.tran5{
+			margin: 5px;
+			background-color: red;
+			height: 50px;
+			width: 50px;
+			box-shadow: 2px 2px 5px grey;
+			transition: width 2s;
+		}
+		.tran5:hover{
+			width: 200px;
+			transition-timing-function: ease-in;
+		}
+		.tran6{
+			margin: 5px;
+			background-color: red;
+			height: 50px;
+			width: 50px;
+			box-shadow: 2px 2px 5px grey;
+			transition: width 2s;
+		}
+		.tran6:hover{
+			width: 200px;
+			transition-timing-function: ease-out;
+		}
+		.tran7{
+			margin: 5px;
+			background-color: red;
+			height: 50px;
+			width: 50px;
+			box-shadow: 2px 2px 5px grey;
+			transition: width 2s;
+		}
+		.tran7:hover{
+			width: 200px;
+			transition-timing-function: ease-in-out;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<div><h2>Use of CSS Transition </h2></div>
+	</header>
+	<div class="container">
+		<div class="transition">
+			<h3>* only width transition</h3>
+		    <div class="tran1"></div>
+		</div>
+		<div class="transition">
+			<h3>* both width and height transition</h3>
+		    <div class="tran2"></div>
+		</div>
+		<div class="transition">
+			<h3>* transition-timing-function:linear transition</h3>
+		    <div class="tran3"></div>
+		</div>
+		<div class="transition">
+			<h3>* transition-timing-function:ease transition</h3>
+		    <div class="tran4"></div>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="transition">
+			<h3>* transition-timing-function:ease-in
+			 transition</h3>
+		    <div id="tran" class="tran5"></div>
+		</div>
+		<div class="transition">
+			<h3>* transition-timing-function:ease-out
+			 transition</h3>
+		    <div id="tran" class="tran6"></div>
+		</div>
+		<div class="transition">
+			<h3>* transition-timing-function:ease-in-out transition</h3>
+		    <div id="tran" class="tran7"></div>
+		</div>
+	</div>
+</body>
+</html>
